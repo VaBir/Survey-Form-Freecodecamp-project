@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+ <html>
+  
+  <head>
+   <title>Register</title>
+   <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+   <h1 id='title'>Registration Form for Vassilis' Hiring</h1>
+   <p id='description'>Please fill out this form with the required information of the person applying for hiring Vasileios</p>
+   <form id='survey-form' action='https://register-demo.freecodecamp.org'>
+   
+   <fieldset>
+     <label id='name-label'>First Name: <input id='name' type="text" name="first-name" placeholder='Name' required>  </label>
+     <label id='name-label'>Last Name:<input id='last-name' type="text" name='last-name' placeholder='Name' required></label>
+     <label id='name-label'>Company Name:<input id='company-name' type="text" name='company-name' placeholder='Name' required></label>
+     <label id='email-label'>Email:<input id='email' type='email' name='email' placeholder='Email' required></label>
+     <label id='number-label'>Proposed Salary (per month):<input id='number' type="number" name='salary' placeholder='Amount' min='1000' max='10000' required></label>
+     <label id='password-label'>Create a New Password:<input id='password' type="password"name="password" pattern="[a-z0-5]{8,}" placeholder='Password' required /></label> 
+   </fieldset>
+
+   <fieldset>
+    <p class='pr'>Proposed employment</p>
+    <label > Indefinite Contract<input type='radio' name='contract' class='inline' value='Indefinite Contract'> </label>
+    <label > Fixed-term Contract<input type='radio' name='contract' class='inline'value='Definite Contract' > </label>
+    <label>Why do you want to hire Vassilis?
+      <select id='dropdown' name="reason" class='block'>
+        <option value="">(select one)</option>
+        <option value="1">Because he is smart</option>
+        <option value="2">Because he is meticulous</option>
+        <option value="3">Because he will bring value</option>
+        <option value="4">ALL THE ABOVE</option>
+      </select>
+     </label> 
+   </fieldset>
+
+   <fieldset>
+    <label>
+      <input type='checkbox' name='disclaimer' value='disclaimer' class='inline' required> I confirm that all the above information is correct and true
+    </label>
+    <label>
+     <input type='checkbox' name='agree to be contacted' value='agree to be contacted' class='inline' required> I confirm I wish to be contacted by Vassilis
+    </label>
+    <label>Any other useful information you would like to add?
+     <textarea name="bio" rows="5" cols="50" class='block' placeholder="Please type..."></textarea>
+    </label>
+   </fieldset>
+  
+   <input id='submit' type="submit" value="Submit" /> 
+  
+   </form>
+  </body>
+ </html>
